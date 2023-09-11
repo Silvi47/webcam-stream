@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interviewer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <ul class="navigation-bar">
+        <li><a class="log" href="https://kawancara.com/"><img class="logo" src="./assets/images/Kawancara Logo.png"></a></li>
+        <li style="float:right"><a class="batal" href="https://kawancara.com/ai-interviewer/">Batalkan</a></li>
+    </ul>
+
+    <div class="question">
+        <p>Halo…<br><br></p>
+        <p>Kawancara AI disini.<br>
+        Sekarang bisa kita mulai interviewnya?
+        </p>
+    </div>
+
+    <div class="button"><a href="#camera-checking">Mulai</a></div>
+
+    <div id="camera-checking" class="modal">
+        <div id="basic" style="text-align:center;" class="content">
+            <video class="videostream" autoplay=""></video>
+            <audio class="audiostream" autoplay=""></audio>
+            <br><br>
+            
+            <!-- <button id="stop-button">Stop</button> -->
+            <br> <br>
+            <p class="camera-content">
+                <strong style="font-size: 15px;">Perhatian!</strong>
+                <ol>
+                    <li>Pastikan wajah anda terlihat dengan jelas.</li>
+                    <li>Pastikan anda berada di tempat yang terang.</li>
+                    <li>Pastikan tidak ada suara bising di sekitar anda.</li>
+                    <li>Pastikan jaringan internet dalam keadaan bagus.</li>
+                </ol>
+                <br>
+            </p><br><br><br><br>
+            <button id="start" class="capture-button">Coba Kamera</button>
+            <button id="stop-button" disabled><a href="https://kawancara.com/ai-interviewer/" style="text-decoration: none;color: white;"></a>Mulai Interview</a></button>
+            <a href="#" class="box-close" id="stop-button">
+                x
+            </a>
+        </div>
+    </div>
+
+</body>
+<script src="camera1.js"></script>
+</html>
