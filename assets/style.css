@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 130px; /* change it to desired width */
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    /* box-shadow: 2px 2px 8px #D8D8D8; */
+    border-bottom: 2px solid #D8D8D8;
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 2%;    /* if you want it vertically middle of the navbar. */
+    margin-top: 0;
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 180px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;
+}
+
+li {
+    margin-right: 50px;
+    float: left;
+    border-right:1px solid #bbb;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px; 
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: #19A9E6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.batal {
+    margin-top: 25px;
+}
+
+.batal:hover:not(.active) {
+    background-color: #19A9E6;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.log:hover {
+    background-color: #fff;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.question {
+    margin-top: 80px;
+    padding: 80px 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    border-color: #808080;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.button {
+    margin: 50px 40%;
+    background-color: #19A9E6;
+    padding: 1% 3%;
+    border-radius: 10px;
+    border-color: #19A9E6;
+}
+
+.button a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #8fdaf9;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content {
+    position: absolute;
+    background: white;
+    width: 400px;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+.box-close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 200px;
+    box-shadow: 2px 2px 8px #878787;
+    padding: 3px 10px;
+}
+
+/* Camera Styles*/
+#basic {
+    background: white;
+    border: 1px solid #ccc;
+    width: 400px;
+    height: 470px;
+    margin: 0 auto;
+}
+
+video, #cssfilters-video, #screenshot-img {
+    width: 300px;
+    height: 200px;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+  
+button {
+    background: #19A9E6;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 14px;
+}
+
+button:disabled {
+    background-color: #D8D8D8;
+    color: #808080;
+}
+
+button:disabled:hover {
+    background-color: #D8D8D8;
+    color: #808080;
+    cursor: default;
+}
+
+button:hover {
+    background-color: #8fdaf9;
+    color: #fff;
+}
+  
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, input {
+    line-height: normal;
+}
+
+.camera-content, ol, li {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 10px;
+}
